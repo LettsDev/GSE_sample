@@ -1,5 +1,5 @@
 import { ServiceEventExceptionInterface } from "../../types";
-import { useState, createRef, RefObject, useRef } from "react";
+import { useState } from "react";
 import format from "date-fns/format";
 import { Popover, PopoverTrigger, PopoverContent } from "../Popover";
 import { Link } from "react-router-dom";
@@ -11,11 +11,7 @@ interface Props {
   setSelectedDate: React.Dispatch<React.SetStateAction<Date>>;
 }
 
-export default function AgendaListItem({
-  event,
-  selectedDate,
-  setSelectedDate,
-}: Props) {
+export default function AgendaListItem({ event }: Props) {
   console.log(event.status);
   const [popoverOpen, setPopoverOpen] = useState(false);
 

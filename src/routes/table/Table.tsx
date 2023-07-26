@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Toolbar, TableComponent } from "../../components/Tables";
 import { useEquipmentContext } from "../../context/equipment.provider";
 import { useServiceContext } from "../../context/services.provider";

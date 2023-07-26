@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import Calendar from "./routes/calendar/Calendar.tsx";
 import "./index.css";

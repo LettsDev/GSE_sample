@@ -1,6 +1,6 @@
 import { IconType } from "react-icons";
 import { NavType } from "../../components/component.types";
-import { FaHouse, FaCalendar, FaTable, FaHammer } from "react-icons/fa6";
+import { FaHouse, FaCalendar, FaTable } from "react-icons/fa6";
 
 const navConfig: NavType[] = [
   { to: "/", label: "home", icon: FaHouse as IconType },

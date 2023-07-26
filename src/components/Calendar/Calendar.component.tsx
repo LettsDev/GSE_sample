@@ -1,4 +1,3 @@
-import { Children, ReactNode } from "react";
 import {
   format,
   startOfMonth,
@@ -102,7 +101,7 @@ export default function CalendarComponent(
   }
   const CalendarElements = () => {
     const dates = createCalendarDates();
-    const cellElements = dates.map((date, index) => {
+    const cellElements = dates.map((date) => {
       const dateInMonth = selectedDate.getMonth() === date.date.getMonth();
       //add in logic for adding events and styling
       const events = data.filter(

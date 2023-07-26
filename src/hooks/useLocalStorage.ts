@@ -3,13 +3,12 @@ export default function useLocalStorage() {
     id: string;
   };
 
-  const createMock = <T>(key: string, data: T[]): T[] => {
+  const createMock = (key: string, data: string) => {
     const exists = localStorage.getItem(key);
     if (exists) {
       return data;
     } else {
-      data.forEach((item) => create(key, item));
-      return data;
+      return localStorage.setItem(key, data);
     }
   };
 

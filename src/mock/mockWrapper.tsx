@@ -21,11 +21,11 @@ export default function MockWrapper({
       { key: "user", data: UserData },
       { key: "equipment", data: EquipmentData },
       { key: "equipment_instance", data: EquipmentInstanceData },
-      { key: "service", data: ServiceData },
       { key: "service_schedule", data: ServiceSchedule },
+      { key: "service", data: ServiceData },
     ];
     mockData.forEach((item) => {
-      createMock(item.key, item.data);
+      createMock(item.key, JSON.stringify(item.data));
     });
   }
   loadMockIntoLocal();
