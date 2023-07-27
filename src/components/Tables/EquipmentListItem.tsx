@@ -1,39 +1,61 @@
-import { EquipmentInstanceInterface } from "../../types";
+import {
+  EquipmentInstanceInterface,
+  ServiceScheduleInterface,
+} from "../../types";
 import { Popover, PopoverTrigger, PopoverContent } from "../Popover";
 import { FaEllipsisVertical } from "react-icons/fa6";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 export default function EquipmentListItem({
   item,
+  services,
 }: {
   item: EquipmentInstanceInterface;
+  services: ServiceScheduleInterface[];
 }) {
   const [popoverOpen, setPopoverOpen] = useState(false);
   return (
     <li
       key={item._id}
-      className="h-11 text-sm grid grid-cols-12 items-center even:bg-gray-100 px-2"
+      className="even:bg-gray-100 flex my-6 items-center justify-between"
     >
-      <div
-        className={
-          (item.status === "OPERABLE"
-            ? "bg-green-400"
-            : item.status === "INOPERABLE" || item.status === "BEING_REPAIRED"
-            ? "bg-red-300"
-            : item.status === "DAMAGED" || item.status === "OUT_OF_SERVICE"
-            ? " bg-orange-300 "
-            : "") + " h-3 w-3  col-start-1 col-span-2 ml-1 rounded-full "
-        }
-      ></div>
-      <p className=" col-start-3 col-span-5 ">{item.equipment_type.name}</p>
-      <p className="col-start-8 col-span-3">{item.location.name}</p>
+      <div className=" text-sm flex items-center pr-2 ">
+        <div className="w-10 pl-3">
+          {/* container for status */}
+          <div
+            className={
+              (item.status === "OPERABLE"
+                ? "bg-green-400"
+                : item.status === "INOPERABLE" ||
+                  item.status === "BEING_REPAIRED"
+                ? "bg-red-300"
+                : item.status === "DAMAGED" || item.status === "OUT_OF_SERVICE"
+                ? " bg-orange-300 "
+                : "") + " h-3 w-3 rounded-full "
+            }
+          ></div>
+        </div>
+        <p className=" w-28 mr-2">{item.equipment_type.name}</p>
+        <ul className="w-32 shrink-0 mr-2">
+          {services
+            .filter((service) => service.equipment._id === item._id)
+            .map((foundService) => (
+              <li>-{foundService.service.name}</li>
+            ))}
+        </ul>
+        <p className="w-8 pr-2">{item.location.name}</p>
+        <p className="w-28 hidden md:inline shrink-0">{item.model_number}</p>
+        <p className="w-28 min-w-fit hidden md:inline shrink-0">
+          {item.purchase_date?.toDateString()}
+        </p>
+      </div>
       <Popover
         placement="left"
         open={popoverOpen}
         onOpenChange={setPopoverOpen}
       >
         <PopoverTrigger
-          className="col-start-12 col-span-1  flex justify-center items-center h-7"
+          className="  flex justify-center items-center  pl-3 py-1 pr-4"
           onClick={() => setPopoverOpen((prev) => !prev)}
         >
           <div>

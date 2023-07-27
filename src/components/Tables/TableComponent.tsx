@@ -21,10 +21,13 @@ export default function TableComponent({
   //use switch function to set the data to use in the table
   function headerSwitch(tableNav: string) {
     const equipmentHeaderConfig = [
-      { title: "", class: "col-start-1 col-span-2" },
-      { title: "Type", class: "col-start-3 col-span-5" },
-      { title: "Location", class: "col-start-8 col-span-3" },
-      { title: "", class: "" },
+      { title: "", class: "w-10" },
+      { title: "Type", class: "w-28 mr-2" },
+      { title: "Services", class: "w-32 mr-2" },
+      { title: "Location", class: "w-24" },
+      { title: "Model-Number", class: "w-28 hidden md:inline" },
+      { title: "Purchase date", class: "w-28 hidden md:inline " },
+      { title: "Notes", class: "w-28 min-w-fit hidden md:inline" },
     ];
     const serviceHeaderConfig = [
       { title: "status", class: "col-start-1 col-span-2" },
@@ -82,19 +85,24 @@ export default function TableComponent({
       return [];
     }
   }, [query, equipment, services]);
-  console.log(filteredData);
   return (
     <div className="">
       <hr />
-      <ol className="grid grid-cols-12 items-center text-sm font-bold px-2 py-2 mb-2 bg-slate-100">
+      <ol className="flex items-center text-sm font-bold py-2 mb-2 bg-slate-100 h-10">
         {headerSwitch(tableNav)}
       </ol>
-      <ol className="px-2 overflow-y-auto h-full">
+      <ol className=" overflow-y-auto">
         {filteredData?.map((item) => {
           if (typeof item === "undefined") {
             return <></>;
           } else if (tableNav === "equipment" && "equipment_type" in item) {
-            return <EquipmentListItem item={item} key={item._id} />;
+            return (
+              <EquipmentListItem
+                item={item}
+                key={item._id}
+                services={services}
+              />
+            );
           } else if (tableNav === "services" && "completion_date" in item) {
             return <ServiceListItem service={item} />;
           }
