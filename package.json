@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://lettsdev.github.io/GSE_sample/",
+  "homepage": "http://lettsdev.github.io/gse_sample/",
   "scripts": {
     "dev": "vite --host --port 3001",
     "build": "tsc && vite build",

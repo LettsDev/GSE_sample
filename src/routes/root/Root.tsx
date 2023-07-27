@@ -11,7 +11,7 @@ export default function Root() {
       <Outlet />
       <footer className="text-sm text-end ">
         <hr />
-        <p className="mr-3">2023 LettsDev</p>
+        <p className="mr-3">2023 LettsDev - jared@lettsdev.ca</p>
       </footer>
     </div>
   );

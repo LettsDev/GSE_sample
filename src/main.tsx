@@ -15,6 +15,7 @@ import { ServiceEventsProvider } from "./context/serviceEvents.provider.tsx";
 import { EquipmentProvider } from "./context/equipment.provider.tsx";
 import { ServiceProvider } from "./context/services.provider.tsx";
 import Table from "./routes/table/Table.tsx";
+import Home from "./routes/home/Home.tsx";
 const router = createBrowserRouter(
   [
     {
@@ -31,6 +32,7 @@ const router = createBrowserRouter(
           ],
         },
         { path: "/tables", element: <Table /> },
+        { path: "/home", element: <Home /> },
       ],
     },
     { path: "*", element: <Navigate to="/" /> },
