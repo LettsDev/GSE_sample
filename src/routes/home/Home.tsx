@@ -11,7 +11,7 @@ export default function Home() {
         sample of what is proposed.
       </p>
       <p className="mt-5">
-        Please let me know any feedback that you might have about this App.
+        Please let me know of any feedback that you might have about this App.
       </p>
     </div>
   );

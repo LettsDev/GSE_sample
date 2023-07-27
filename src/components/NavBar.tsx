@@ -21,7 +21,7 @@ export default function NavBar() {
   return (
     <Flowbite theme={{ theme: customTheme }}>
       <Navbar fluid rounded className="pl-3">
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="/gse_sample/home">
           <img
             src={pascoLogo}
             alt="GSE logo"

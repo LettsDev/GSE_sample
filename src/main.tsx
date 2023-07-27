@@ -16,12 +16,16 @@ import { EquipmentProvider } from "./context/equipment.provider.tsx";
 import { ServiceProvider } from "./context/services.provider.tsx";
 import Table from "./routes/table/Table.tsx";
 import Home from "./routes/home/Home.tsx";
+import Error from "./routes/error/Error.tsx";
 const router = createBrowserRouter(
   [
     {
       path: "/",
       element: <Root />,
+      errorElement: <Error />,
       children: [
+        { element: <Navigate to="/home" />, index: true },
+        { element: <Home />, path: "/home" },
         {
           path: "/calendar",
           element: <Calendar />,
@@ -32,10 +36,9 @@ const router = createBrowserRouter(
           ],
         },
         { path: "/tables", element: <Table /> },
-        { path: "/home", element: <Home /> },
+        { path: "/*", element: <Navigate to="/home" /> },
       ],
     },
-    { path: "*", element: <Navigate to="/home" /> },
   ],
   { basename: "/gse_sample" }
 );
