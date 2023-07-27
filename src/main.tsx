@@ -35,7 +35,7 @@ const router = createBrowserRouter(
         { path: "/home", element: <Home /> },
       ],
     },
-    { path: "*", element: <Navigate to="/" /> },
+    { path: "*", element: <Navigate to="/home" /> },
   ],
   { basename: "/gse_sample" }
 );
