@@ -142,7 +142,7 @@ export default function CalendarComponent(
           {<FaArrowLeft />}
         </button>
         <h1
-          className="text-gray-900 font-bold cursor-pointer p-3 text-lg"
+          className="text-gray-900 font-bold cursor-pointer p-3 text-lg family-serif"
           onClick={() => setSelectedDate(new Date())}
         >
           {format(selectedDate, "LLLL yyyy")}

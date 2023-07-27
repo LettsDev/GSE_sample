@@ -35,8 +35,10 @@ export default function EquipmentListItem({
             }
           ></div>
         </div>
-        <p className=" w-28 mr-2 shrink-0">{item.equipment_type.name}</p>
-        <ul className="w-32 shrink-0 mr-2">
+        <p className=" w-24 mr-2 shrink-0 line-clamp-2">
+          {item.equipment_type.name}
+        </p>
+        <ul className="w-28 shrink-0 mr-4 line-clamp-2">
           {services
             .filter((service) => service.equipment._id === item._id)
             .map((foundService) => (
@@ -44,13 +46,13 @@ export default function EquipmentListItem({
             ))}
         </ul>
         <p className="w-20 pr-2 shrink-0">{item.location.name}</p>
-        <p className="w-28 hidden sm:inline shrink-0 mr-2">
+        <p className="w-28 hidden sm:inline shrink-0 mr-2 line-clamp-2">
           {item.model_number}
         </p>
         {/* <p className="w-28 min-w-fit hidden md:inline shrink-0">
           {item.purchase_date?.toDateString()}
         </p> */}
-        <p className="w-full hidden h-40 md:inline line-clamp-4">
+        <p className="w-full hidden md:inline line-clamp-4 align-middle">
           {item.notes}
         </p>
       </div>

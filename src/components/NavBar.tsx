@@ -25,9 +25,9 @@ export default function NavBar() {
           <img
             src={pascoLogo}
             alt="GSE logo"
-            className="mr-3 h-7 sm:h-8 md:h-9 rounded-md"
+            className="mr-3 h-7 sm:h-8 md:h-9 rounded-full"
           />
-          <span>Sample</span>
+          <h1 className=" font-serif text-xl">Sample</h1>
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>

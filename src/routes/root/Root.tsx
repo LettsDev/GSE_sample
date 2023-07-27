@@ -9,6 +9,10 @@ export default function Root() {
         <hr className="w-full" />
       </header>
       <Outlet />
+      <footer className="text-sm text-end ">
+        <hr />
+        <p className="mr-3">2023 LettsDev</p>
+      </footer>
     </div>
   );
 }

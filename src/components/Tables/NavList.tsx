@@ -12,7 +12,7 @@ export default function NavList({ tableNav, setTableNav }: Props) {
     "tickets",
   ];
   return (
-    <ul className=" flex p-1 w-full max-w-screen-sm">
+    <ul className=" flex p-1 w-full max-w-screen-sm font-serif">
       {labels.map((label) => (
         <li
           key={label}

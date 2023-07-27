@@ -12,28 +12,27 @@ export default function ServiceListItem({ service }: Props) {
   return (
     <li
       key={service._id}
-      className="h-11 text-sm grid grid-cols-12 items-center even:bg-gray-100 px-2"
+      className="even:bg-gray-100 flex py-3 items-center justify-between bg-white"
     >
-      {/* <div
-        className={
-          (service.status === "OPERABLE"
-            ? "bg-green-400"
-            : item.status === "INOPERABLE" || item.status === "BEING_REPAIRED"
-            ? "bg-red-300"
-            : item.status === "DAMAGED" || item.status === "OUT_OF_SERVICE"
-            ? " bg-orange-300 "
-            : "") + " h-3 w-3  col-start-1 col-span-2 ml-1 rounded-full "
-        }
-      ></div> */}
-      <p className=" col-start-3 col-span-5 ">{}</p>
-      <p className="col-start-8 col-span-3">{}</p>
+      <div className=" text-sm flex items-center  ">
+        <p className=" line-clamp-2 w-24 ml-4 shrink-0">
+          {service.service.name}
+        </p>
+        <p className="w-24 mx-2 shrink-0">
+          {service.service.type.toLowerCase()}
+        </p>
+        <p className="w-24 mx-2 shrink-0">{`${service.equipment.equipment_type.name} (${service.equipment.location.name})`}</p>
+        <p className="w-full hidden sm:inline line-clamp-4 align-middle">
+          {service.notes}
+        </p>
+      </div>
       <Popover
         placement="left"
         open={popoverOpen}
         onOpenChange={setPopoverOpen}
       >
         <PopoverTrigger
-          className="col-start-12 col-span-1  flex justify-center items-center h-7"
+          className="flex justify-center items-center  pl-3 py-1 pr-4"
           onClick={() => setPopoverOpen((prev) => !prev)}
         >
           <div>

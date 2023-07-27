@@ -9,7 +9,7 @@ interface Props {
 const ButtonComp = forwardRef<Ref, Props>((props, ref) => {
   const {
     children,
-    style = "bg-orange-500 p-3 rounded-lg  text-white font-medium w-1/2 ",
+    style = "bg-orange-500 p-3 rounded-lg  text-white font-medium w-1/2 hover:bg-orange-600",
   } = props;
   return (
     <button className={style} ref={ref}>
