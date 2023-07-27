@@ -24,9 +24,8 @@ export default function TableComponent({
       { title: "", class: "w-10" },
       { title: "Type", class: "w-28 mr-2" },
       { title: "Services", class: "w-32 mr-2" },
-      { title: "Location", class: "w-24" },
-      { title: "Model-Number", class: "w-28 hidden md:inline" },
-      { title: "Purchase date", class: "w-28 hidden md:inline " },
+      { title: "Location", class: "w-20" },
+      { title: "Model-Number", class: "w-28 mr-2 hidden sm:inline" },
       { title: "Notes", class: "w-28 min-w-fit hidden md:inline" },
     ];
     const serviceHeaderConfig = [
@@ -91,7 +90,7 @@ export default function TableComponent({
       <ol className="flex items-center text-sm font-bold py-2 mb-2 bg-slate-100 h-10">
         {headerSwitch(tableNav)}
       </ol>
-      <ol className=" overflow-y-auto">
+      <ol className="overflow-y-auto">
         {filteredData?.map((item) => {
           if (typeof item === "undefined") {
             return <></>;

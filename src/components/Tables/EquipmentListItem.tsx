@@ -17,10 +17,10 @@ export default function EquipmentListItem({
   return (
     <li
       key={item._id}
-      className="even:bg-gray-100 flex my-6 items-center justify-between"
+      className="even:bg-gray-100 flex py-3 items-center justify-between bg-white"
     >
-      <div className=" text-sm flex items-center pr-2 ">
-        <div className="w-10 pl-3">
+      <div className=" text-sm flex items-center  ">
+        <div className="w-10 pl-3 shrink-0">
           {/* container for status */}
           <div
             className={
@@ -35,7 +35,7 @@ export default function EquipmentListItem({
             }
           ></div>
         </div>
-        <p className=" w-28 mr-2">{item.equipment_type.name}</p>
+        <p className=" w-28 mr-2 shrink-0">{item.equipment_type.name}</p>
         <ul className="w-32 shrink-0 mr-2">
           {services
             .filter((service) => service.equipment._id === item._id)
@@ -43,10 +43,15 @@ export default function EquipmentListItem({
               <li>-{foundService.service.name}</li>
             ))}
         </ul>
-        <p className="w-8 pr-2">{item.location.name}</p>
-        <p className="w-28 hidden md:inline shrink-0">{item.model_number}</p>
-        <p className="w-28 min-w-fit hidden md:inline shrink-0">
+        <p className="w-20 pr-2 shrink-0">{item.location.name}</p>
+        <p className="w-28 hidden sm:inline shrink-0 mr-2">
+          {item.model_number}
+        </p>
+        {/* <p className="w-28 min-w-fit hidden md:inline shrink-0">
           {item.purchase_date?.toDateString()}
+        </p> */}
+        <p className="w-full hidden h-40 md:inline line-clamp-4">
+          {item.notes}
         </p>
       </div>
       <Popover

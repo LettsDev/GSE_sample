@@ -11,7 +11,7 @@ export default function Table() {
   const { equipment } = useEquipmentContext();
   const { services } = useServiceContext();
   return (
-    <div className="h-full">
+    <div className="h-full bg-slate-100">
       <Toolbar
         tableNav={tableNav}
         setTableNav={setTableNav}

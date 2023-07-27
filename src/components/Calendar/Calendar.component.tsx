@@ -132,7 +132,7 @@ export default function CalendarComponent(
   }
   console.log(data);
   return (
-    <div className="flex flex-col w-full max-w-sm min-w-fit mb-5">
+    <div className="flex flex-col mb-5 ">
       {/* toolbar */}
       <div className="flex justify-between grow items-center">
         <button

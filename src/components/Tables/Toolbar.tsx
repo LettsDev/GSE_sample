@@ -16,9 +16,9 @@ export default function Toolbar({
   setQuery,
 }: Props) {
   return (
-    <div className="bg-slate-100">
+    <div className=" flex flex-col items-center ">
       <NavList tableNav={tableNav} setTableNav={setTableNav} />
-      <div className="bg-inherit py-3 px-1 flex items-center gap-2">
+      <div className="bg-inherit py-3 px-1 flex  gap-1 w-full max-w-screen-sm">
         {/* search bar */}
 
         <TextInputComp

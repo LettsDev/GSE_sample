@@ -35,7 +35,7 @@ const router = createBrowserRouter(
     },
     { path: "*", element: <Navigate to="/" /> },
   ],
-  { basename: "/GSE_sample" }
+  { basename: "/gse_sample" }
 );
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

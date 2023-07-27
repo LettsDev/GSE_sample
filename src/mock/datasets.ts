@@ -87,7 +87,7 @@ export const EquipmentInstanceData: EquipmentInstanceInterface[] = [
     notes:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ex leo, pulvinar quis lorem et, facilisis tristique sapien. Mauris fermentum turpis pretium ligula eleifend luctus. Fusce lacinia aliquet ex rhoncus faucibus. Suspendisse egestas eget massa in gravida. Donec scelerisque ut enim eu vestibulum. Etiam gravida pellentesque tellus vitae finibus. Donec euismod lacinia tortor, a imperdiet ex lacinia nec. Nunc cursus dapibus lectus ut condimentum. Quisque dictum quis quam vitae rhoncus. Curabitur arcu odio, sodales ut velit vitae, convallis sagittis tellus. Maecenas pulvinar leo sed urna mollis condimentum. Ut commodo, urna a consectetur tempor, purus elit viverra tellus, eget pulvinar mi sapien in augue.",
     serial_number: "",
-    model_number: "",
+    model_number: "VD4-8S22",
     status: "BEING_REPAIRED",
   },
   {
@@ -97,7 +97,7 @@ export const EquipmentInstanceData: EquipmentInstanceInterface[] = [
     notes:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ex leo, pulvinar quis lorem et, facilisis tristique sapien. Mauris fermentum turpis pretium ligula eleifend luctus. Fusce lacinia aliquet ex rhoncus faucibus. Suspendisse egestas eget massa in gravida. Donec scelerisque ut enim eu vestibulum. Etiam gravida pellentesque tellus vitae finibus. Donec euismod lacinia tortor, a imperdiet ex lacinia nec. Nunc cursus dapibus lectus ut condimentum. Quisque dictum quis quam vitae rhoncus. Curabitur arcu odio, sodales ut velit vitae, convallis sagittis tellus. Maecenas pulvinar leo sed urna mollis condimentum. Ut commodo, urna a consectetur tempor, purus elit viverra tellus, eget pulvinar mi sapien in augue.",
     serial_number: "",
-    model_number: "",
+    model_number: "BA4-8G22",
     status: "OPERABLE",
   },
   {
@@ -107,7 +107,7 @@ export const EquipmentInstanceData: EquipmentInstanceInterface[] = [
     notes:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ex leo, pulvinar quis lorem et, facilisis tristique sapien. Mauris fermentum turpis pretium ligula eleifend luctus. Fusce lacinia aliquet ex rhoncus faucibus. Suspendisse egestas eget massa in gravida. Donec scelerisque ut enim eu vestibulum. Etiam gravida pellentesque tellus vitae finibus. Donec euismod lacinia tortor, a imperdiet ex lacinia nec. Nunc cursus dapibus lectus ut condimentum. Quisque dictum quis quam vitae rhoncus. Curabitur arcu odio, sodales ut velit vitae, convallis sagittis tellus. Maecenas pulvinar leo sed urna mollis condimentum. Ut commodo, urna a consectetur tempor, purus elit viverra tellus, eget pulvinar mi sapien in augue.",
     serial_number: "",
-    model_number: "",
+    model_number: "VD22-8S672",
     status: "OPERABLE",
   },
   {
@@ -117,7 +117,7 @@ export const EquipmentInstanceData: EquipmentInstanceInterface[] = [
     notes:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ex leo, pulvinar quis lorem et, facilisis tristique sapien. Mauris fermentum turpis pretium ligula eleifend luctus. Fusce lacinia aliquet ex rhoncus faucibus. Suspendisse egestas eget massa in gravida. Donec scelerisque ut enim eu vestibulum. Etiam gravida pellentesque tellus vitae finibus. Donec euismod lacinia tortor, a imperdiet ex lacinia nec. Nunc cursus dapibus lectus ut condimentum. Quisque dictum quis quam vitae rhoncus. Curabitur arcu odio, sodales ut velit vitae, convallis sagittis tellus. Maecenas pulvinar leo sed urna mollis condimentum. Ut commodo, urna a consectetur tempor, purus elit viverra tellus, eget pulvinar mi sapien in augue.",
     serial_number: "",
-    model_number: "",
+    model_number: "VE4-8FF22",
     status: "INOPERABLE",
   },
   {
@@ -127,7 +127,7 @@ export const EquipmentInstanceData: EquipmentInstanceInterface[] = [
     notes:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ex leo, pulvinar quis lorem et, facilisis tristique sapien. Mauris fermentum turpis pretium ligula eleifend luctus. Fusce lacinia aliquet ex rhoncus faucibus. Suspendisse egestas eget massa in gravida. Donec scelerisque ut enim eu vestibulum. Etiam gravida pellentesque tellus vitae finibus. Donec euismod lacinia tortor, a imperdiet ex lacinia nec. Nunc cursus dapibus lectus ut condimentum. Quisque dictum quis quam vitae rhoncus. Curabitur arcu odio, sodales ut velit vitae, convallis sagittis tellus. Maecenas pulvinar leo sed urna mollis condimentum. Ut commodo, urna a consectetur tempor, purus elit viverra tellus, eget pulvinar mi sapien in augue.",
     serial_number: "",
-    model_number: "",
+    model_number: "VD6888-BG-8S22",
     status: "DAMAGED",
   },
   {
@@ -137,7 +137,7 @@ export const EquipmentInstanceData: EquipmentInstanceInterface[] = [
     notes:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ex leo, pulvinar quis lorem et, facilisis tristique sapien. Mauris fermentum turpis pretium ligula eleifend luctus. Fusce lacinia aliquet ex rhoncus faucibus. Suspendisse egestas eget massa in gravida. Donec scelerisque ut enim eu vestibulum. Etiam gravida pellentesque tellus vitae finibus. Donec euismod lacinia tortor, a imperdiet ex lacinia nec. Nunc cursus dapibus lectus ut condimentum. Quisque dictum quis quam vitae rhoncus. Curabitur arcu odio, sodales ut velit vitae, convallis sagittis tellus. Maecenas pulvinar leo sed urna mollis condimentum. Ut commodo, urna a consectetur tempor, purus elit viverra tellus, eget pulvinar mi sapien in augue.",
     serial_number: "",
-    model_number: "",
+    model_number: "VD4FFF-8S22EEEE",
     status: "OUT_OF_SERVICE",
   },
 ];
